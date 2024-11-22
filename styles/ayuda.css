@@ -139,8 +139,7 @@ main section .p {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
+
 }
 .footer-item_one {
   width: 400px;
@@ -215,4 +214,11 @@ a .nav-menu {
 .nav-menu {
   margin-right: 20px;
 }
+}
+
+@media (min-height: 800px) {
+ .footer {
+    position: absolute;
+    bottom: 0;
+ }
 }
