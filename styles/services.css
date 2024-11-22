@@ -38,6 +38,39 @@ body {
   width: 140px;
   height: 130px;
 }
+.header__open-nav, .checkbox {
+  display: none;
+}
+
+.nav__ul {
+  display: flex;
+  padding: 0;
+  gap: 20px;
+  margin-right: 70px;
+}
+
+.nav__ul-li {
+  list-style: none;
+}
+
+.nav__ul-li-link {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 10px;
+  transition: background 0.5s;
+  font-size: 20px;
+}
+
+.nav__ul-li-link:hover {
+  background: var(--text-info);
+}
+
+.nav__ul-li-link:active {
+  background: var(--text-subtitle);
+}
+
 .navbar {
   margin-right: 100px;
 }
@@ -49,12 +82,6 @@ body {
 } 
 .nav-menu {
   display: none;
-}
-.container-btn {
-  display: none;
-}
-.navbar a:hover {
-  color: var(--hover);
 }
 
 .container-page-services {
@@ -320,31 +347,36 @@ body {
     height: 90px;
     margin-left: 100px;
   }
-  .header .navbar {
-    display: block;
+  .header img {
+    width: 100px;
+    height: 90px;
+    margin-left: 100px;
   }
-  .navbar .nav-menu {
-    display: block;
-    font-size: 35px;
-    margin-right: 80px;
+  .header__open-nav {
+    display: inline-block;
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    right: 70px;
   }
-  .header .menu {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 100px;
-    right: 0;
-    background-color: var(--background-card);
-    display: grid;
-    place-items: center;
-    clip-path: circle(0% at top left);
-    transition: clip-path 0.4s;
-    z-index: 10;
+  .nav {
+      display: none;
+      background-color: var(--background-card);
+      position: absolute;
+      height: 500px;
+      width: 100%;
+      top: 100px;
+      z-index: 10;
   }
-  .header .menu:target {
-    clip-path: circle(150% at top left);
+  .nav__ul {
+      flex-direction: column;
+      margin: auto;
+      justify-content: space-between;
+      text-align: center;
   }
-  .container-page-services .title {
+  .checkbox:checked ~ .nav {
+      display: flex;
+  }tainer-page-services .title {
     font-size: 30px;
   }
   .container-page-services .subtitle {

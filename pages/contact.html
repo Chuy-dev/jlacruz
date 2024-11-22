@@ -16,16 +16,27 @@
     <a href="../index.html">
       <img src="../img/logo.png" alt="Logo" />
     </a>
-    <nav class="navbar">
-      <a href="#menu" class="nav-menu"><i class="fa-solid fa-bars"></i></a>
-      <div class="menu" id="menu">
-        <a href="../index.html">Inicio</a>
-        <a href="./nosotros.html">Nosotros</a>
-        <a href="./services.html">Servicios</a>
-        <a href="./contact.html">Contactos</a>
-        <a href="./ayuda.html">Ayuda</a>
-      </div>
-    </nav>
+    <input type="checkbox" class="checkbox" id="open-nav">
+    <label for="open-nav" class="header__open-nav"><i class="fa-solid fa-bars"></i></label>
+    <nav class="nav">
+      <ul class="nav__ul">
+          <li class="nav__ul-li">
+              <a href="../index.html" class="nav__ul-li-link">Inicio</a>
+          </li>
+          <li class="nav__ul-li">
+              <a href="./nosotros.html" class="nav__ul-li-link">Nosotros</a>
+          </li>
+          <li class="nav__ul-li">
+              <a href="./services.html" class="nav__ul-li-link">Servicios</a>
+          </li>
+          <li class="nav__ul-li">
+              <a href="./contact.html" class="nav__ul-li-link">Contactos</a>
+          </li>
+          <li class="nav__ul-li">
+              <a href="./ayuda.html" class="nav__ul-li-link">Ayuda</a>
+          </li>
+      </ul>
+  </nav>
   </header>
   <main class="main">
     <section class="contact" id="contact">
@@ -70,7 +81,16 @@
       </article>
     </section>
     <section class="form">
-      
+      <form>
+        <p>Formulario de contacto</p>
+
+        <label for="nombre">Nombre</label><br>
+        <input type="text" name="nombre" placeholder="Escribe Tu Nombre"/><br>
+        <label for="correo">Correo</label><br>
+        <input type="text" name="correo" placeholder="Escribe Tu Correo"/><br>
+        <label for="asunto">Asunto</label><br>
+        <textarea name="asunto" placeholder="Escribe Tu Mensaje"></textarea>
+      </form>
     </section>
     <div class="container">
       <div class="btns">

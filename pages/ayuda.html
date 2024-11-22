@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
   <title>Multiservicios generales J.Lacruz C.A</title>
-  <link rel="stylesheet" href="../styles/contact.css" />
+  <link rel="stylesheet" href="../styles/ayuda.css" />
   <script
     src="https://kit.fontawesome.com/4c9a1ab90e.js"
     crossorigin="anonymous"
@@ -16,17 +16,40 @@
     <a href="../index.html">
       <img src="../img/logo.png" alt="Logo" />
     </a>
-    <nav class="navbar">
-      <a href="#menu" class="nav-menu"><i class="fa-solid fa-bars"></i></a>
-      <div class="menu" id="menu">
-        <a href="../index.html">Inicio</a>
-        <a href="./nosotros.html">Nosotros</a>
-        <a href="./services.html">Servicios</a>
-        <a href="./contact.html">Contactos</a>
-        <a href="./ayuda.html">Ayuda</a>
-      </div>
-    </nav>
+    <input type="checkbox" class="checkbox" id="open-nav">
+    <label for="open-nav" class="header__open-nav"><i class="fa-solid fa-bars"></i></label>
+    <nav class="nav">
+      <ul class="nav__ul">
+          <li class="nav__ul-li">
+              <a href="./index.html" class="nav__ul-li-link">Inicio</a>
+          </li>
+          <li class="nav__ul-li">
+              <a href="./pages/nosotros.html" class="nav__ul-li-link">Nosotros</a>
+          </li>
+          <li class="nav__ul-li">
+              <a href="./pages/services.html" class="nav__ul-li-link">Servicios</a>
+          </li>
+          <li class="nav__ul-li">
+              <a href="./pages/contact.html" class="nav__ul-li-link">Contactos</a>
+          </li>
+          <li class="nav__ul-li">
+              <a href="./pages/ayuda.html" class="nav__ul-li-link">Ayuda</a>
+          </li>
+      </ul>
+  </nav>
   </header>
+  <main>
+    <section>
+      <h2>Ayuda</h2>
+      <p>Nuestro manual de usuario te guiará paso a paso para que puedas aprovechar al máximo todas las funcionalidades de nuestra plataforma.</p>
+      <p>Haz clic aquí para descargar el manual y resolver todas tus dudas</p>
+      <div class="btn-manual">
+        <a href="../document/manual-de-usuario-J-LACRUZ.pdf" download="manual-de-usuario-J-LACRUZ"  class="container-btns">
+          <button class="btn">Descargar PDF</button>
+        </a>
+      </div>
+    </section>
+  </main>
   <div class="container">
     <div class="btns">
       <a href="./contact.html" class="container-btns">
