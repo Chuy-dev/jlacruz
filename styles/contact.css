@@ -179,6 +179,8 @@ form {
 }
 .container-btns {
   cursor: unset;
+  display: flex;
+  justify-content: space-between;
 }
 .btn {
   height: 40px;
