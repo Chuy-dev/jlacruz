@@ -244,6 +244,7 @@ p {
     margin-right: 20px;
   }
   .us-img {
+    width: 100%;
     text-align: center;
   }
   .us-img img {
